@@ -1,6 +1,8 @@
 pseudo-csv
 ==========
 
+![release](https://github.com/kjedamzik/pseudo-csv/actions/workflows/release.yml/badge.svg)
+
 pseudo-csv is a command line tool for GDPR compliant data pseudonymization in csv files.
 
 pseudo-csv encrypts and base64 encodes selected columns using symmetric AES-128-CBC encryption and a key, derived from a passphrase, provided via `PSEUDO_CSV_PASSPHRASE` environt variable.
