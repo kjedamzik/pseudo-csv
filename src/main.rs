@@ -41,7 +41,8 @@ fn pseudonymize(columns_to_pseudonymize: &[usize]) -> Result<(), Box<dyn Error>>
 
 fn main() {
     let columns_to_pseudonymize: Vec<usize> = env::args()
-        .skip(1)
+        .collect::<Vec<String>>()[1]
+        .split(",")
         .map(|s| s.parse::<usize>().unwrap())
         .collect();
 

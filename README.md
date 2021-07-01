@@ -18,7 +18,7 @@ cat data.csv |xsv table
 
 export PSEUDO_CSV_PASSPHRASE="very secret passphrase!"
 
-cat data.csv  |pseudo-csv 0 1 |xsv table
+cat data.csv  |pseudo-csv 0,1 |xsv table
  email                                         caterogy                  revenue  date
  uho/96MqvhzNjn35cSYSbk9ZST64mQZbx0iZ1Fl/1g0=  RZzZYSvA0QJlKM+RK78Csg==  111.11   2021-01-01
  VHJQ1Vv3gMeGiygka+AfBHMtZnq46LB2LsOC46ZKfas=  AHzyvPCbSpchpiEodwBtpQ==  222.22   2021-02-01
